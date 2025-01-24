@@ -120,8 +120,8 @@ p {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Intensifica a sombra no hover */
 }
 video {
-  width: 100%; /* Faz o vídeo ocupar toda a largura da tela */
-  max-width: 480px; /* Limita a largura máxima do vídeo (ajuste conforme necessário) */
+  width: 480px; /* Faz o vídeo ocupar toda a largura da tela */
+  max-width: 100%; /* Limita a largura máxima do vídeo (ajuste conforme necessário) */
   height: auto; /* Mantém a proporção do vídeo */
   display: block; /* Remove espaços extras ao redor */
   margin: 0 auto; /* Centraliza o vídeo na tela */
