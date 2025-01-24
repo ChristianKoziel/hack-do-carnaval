@@ -1,0 +1,600 @@
+.learn {
+  background-color: #1a1a1a; /* Tom escuro para destaque */
+  padding: 20px;
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+.learn h2 {
+  font-size: 24px;
+  color: #f1c40f; /* Cor vibrante para o título */
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Deixa o título em maiúsculas */
+  letter-spacing: 1.5px; /* Espaçamento entre letras */
+}
+
+.learn ul {
+  list-style: none; /* Remove os marcadores padrão */
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 15px; /* Espaçamento entre os itens */
+}
+
+.learn ul li {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente */
+  background: linear-gradient(135deg, #4a148c, #6a1b9a); /* Fundo em degradê */
+  padding: 15px;
+  border-radius: 8px; /* Cantos arredondados */
+  font-size: 16px;
+  color: #fff; /* Cor branca para contraste */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animações suaves */
+}
+
+.learn ul li:hover {
+  transform: scale(1.03); /* Efeito de "zoom" ao passar o mouse */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Intensifica a sombra */
+}
+
+.learn ul li span {
+  font-size: 20px; /* Tamanho maior para o emoji */
+  margin-right: 10px; /* Espaço entre o emoji e o texto */
+}
+/* Estilo para o bônus */
+.bonus {
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff6f61, #d32f2f); /* Gradiente quente */
+  border-radius: 10px; /* Cantos arredondados */
+  color: white;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+  /* animation: pulse 1s infinite; Animação de leve destaque */
+}
+
+.bonus h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffeb3b; /* Destaque amarelo */
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* Espaçamento das letras */
+}
+
+.bonus p {
+  font-size: 18px;
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.bonus strong {
+  color: #ffeb3b; /* Destaque para palavras importantes */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 235, 59, 0.6);
+  }
+  50% {
+    transform: scale(1.05); /* Aumenta levemente */
+    box-shadow: 0 0 20px rgba(255, 235, 59, 1); /* Brilho no meio do ciclo */
+  }
+}
+
+
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+}
+.justificado {
+  text-align: justify;
+}
+
+p {
+  font-size: 40px;
+}
+.fogo {
+  display: block;
+  margin: 20px auto;
+  width: 70px;
+}
+#imagem-destacada {
+  width: 100%;
+  max-width: 480px;
+  border: 5px solid #3498db; /* Borda de 5px com a cor azul */
+  border-radius: 10px; /* Arredonda os cantos da borda */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+  transition: all 0.3s ease; /* Transição suave ao passar o mouse */
+  align-items: center;
+}
+
+#imagem-destacada:hover {
+  transform: scale(1.05); /* Aumenta a imagem um pouco quando passa o mouse */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Intensifica a sombra no hover */
+}
+video {
+  width: 100%; /* Faz o vídeo ocupar toda a largura da tela */
+  max-width: 480px; /* Limita a largura máxima do vídeo (ajuste conforme necessário) */
+  height: auto; /* Mantém a proporção do vídeo */
+  display: block; /* Remove espaços extras ao redor */
+  margin: 0 auto; /* Centraliza o vídeo na tela */
+}
+.logo-container {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.logo-container img {
+  display: block; /* Garante que o elemento seja tratado como bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+
+/* Cabeçalho promocional */
+.promo-header {
+  background-color: red;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+.promo-header span {
+  font-weight: bold;
+  color: yellow;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #4a148c, #6a1b9a);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.hero img {
+  margin-top: 15px;
+  max-width: 100%;
+  /* border: 5px solid purple; */
+}
+#font30px {
+  font-size: 30px;
+}
+
+/* Conteúdo principal */
+.main-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+}
+#topo {
+  font-size: 20px;
+}
+#verde {
+  color:green;
+}
+.main-content p {
+  margin: 15px 0;
+}
+.textcenter {
+  text-align: center;
+}
+.main-content .highlight {
+  color: yellow;
+  font-weight: bold;
+  text-align: justify;
+}
+#carnaval {
+  color:purple;
+}
+.main-content .arrow-down {
+  width: 100px;
+  height: 100px;
+  /* background-color: blue; */
+  /* clip-path: polygon(50% 0, 0 100%, 100% 100%); */
+  margin: 20px auto;
+}
+
+/* Aprendizado */
+.learn {
+  background-color: #121212;
+  padding: 20px;
+}
+.learn h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.learn ul {
+  list-style: disc;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 600px;
+}
+.learn ul li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.data {
+  color: yellow;
+}
+#carnaval {
+  color:purple;
+}
+/* Seção de Compra */
+.purchase {
+  background: linear-gradient(135deg, #2b0f4c, #130025);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.purchase h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.purchase h1 span {
+  color: #e91e63; /* Cor rosa destaque */
+}
+
+.purchase .content h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffeb3b; /* Amarelo vibrante */
+  margin-bottom: 20px;
+}
+
+.purchase ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 0 auto 20px auto;
+  max-width: 500px;
+}
+
+.purchase ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.purchase ul li::before {
+  /* content: "✔️"; */
+  color: #4caf50; /* Cor verde destaque */
+}
+
+.purchase .price p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.purchase .price p span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.purchase .price h3 {
+  font-size: 32px;
+  color: #76ff03; /* Verde claro */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.purchase .buy-now {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #e91e63;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.purchase .buy-now:hover {
+  background: #d81b60;
+  box-shadow: 0px 4px 10px rgba(233, 30, 99, 0.8);
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.5);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(233, 30, 99, 0.8);
+  }
+  90% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.5);
+  }
+}
+
+/* Botão com pulsação */
+.purchase .buy-now {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #e91e63;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  animation: pulse 1.5s infinite; /* Adicionando a animação */
+}
+
+.purchase .buy-now:hover {
+  background: #d81b60;
+  box-shadow: 0px 4px 10px rgba(233, 30, 99, 0.8);
+}
+/* Section do combo */
+.combo-offer {
+  border: 3px solid #00c853; /* Borda verde vibrante */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  background: linear-gradient(145deg, #0d0d0d, #1c1c1c);
+  box-shadow: 0px 4px 20px rgba(0, 200, 83, 0.5);
+  text-align: center;
+  color: #fff;
+}
+
+/* Cabeçalho da seção */
+.combo-header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #00e676;
+  margin-bottom: 10px;
+}
+
+.combo-header h2 {
+  font-size: 1.5em;
+  color: #a5d6a7;
+  margin-bottom: 20px;
+}
+
+/* Detalhes do combo */
+.combo-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.combo-details ul li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  text-align: left;
+  padding-left: 20px;
+  position: relative;
+}
+
+.combo-details ul li:before {
+  /* content: "✅"; */
+  position: absolute;
+  left: 0;
+  color: #00e676;
+}
+hr {
+    border: 0;
+    height: 3px; /* Espessura da linha */
+    background: linear-gradient(to right, #7e00ff, #d100ff); /* Gradiente roxo */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+    border-radius: 5px; /* Bordas arredondadas para um visual elegante */
+}
+
+/* Preço e botão */
+.combo-price {
+  margin-top: 20px;
+}
+
+.combo-price p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.combo-price .price-old {
+  text-decoration: line-through;
+  color: #f44336;
+}
+
+.combo-price .price-new {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #00e676;
+}
+
+.buy-now {
+  display: inline-block;
+  background-color: #00e676;
+  color: #000;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 200, 83, 0.4);
+  animation: pulse 1.5s infinite;
+}
+
+.buy-now:hover {
+  background-color: #69f0ae;
+  box-shadow: 0px 6px 15px rgba(0, 200, 83, 0.6);
+}
+
+/* Animação do botão */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0px 4px 10px rgba(0, 200, 83, 0.4);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 200, 83, 0.6);
+  }
+}
+
+.faq-section {
+  background: #000; /* Fundo preto */
+  border: 4px solid #6a00ff; /* Borda roxa */
+  border-radius: 15px; /* Bordas arredondadas */
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px; /* Centraliza e limita a largura */
+  text-align: center;
+  color: #fff;
+}
+
+.faq-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.whatsapp-logo {
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  margin: 15px auto;
+  display: block; /* Centraliza a imagem */
+}
+
+.faq-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ff00; /* Verde vibrante */
+  margin-bottom: 20px;
+}
+
+.faq-questions h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.faq-questions ul {
+  list-style: none;
+  padding: 0;
+  color: #d1c4e9; /* Lilás suave */
+  text-align: left; /* Alinhamento à esquerda */
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.faq-questions li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #6a00ff; /* Botão roxo */
+  border: 2px solid #fff; /* Borda branca */
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #9a4bff; /* Roxo mais claro no hover */
+  border-color: #9a4bff; /* Borda combina com hover */
+  transform: scale(1.1);
+}
+/* Estilos para o footer */
+.footer {
+  background-color: #121212; /* Cor de fundo escura */
+  color: white; /* Texto branco para contraste */
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 2px solid #3498db; /* Linha de destaque no topo */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #f1c40f; /* Cor vibrante para links */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+}
+
+.social-media a {
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.2); /* Efeito de zoom nas redes sociais */
+}
+#direitosreservados {
+  font-size: 17px;
+}
+
+.popup {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.popup.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
