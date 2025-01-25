@@ -114,7 +114,9 @@ p {
   transition: all 0.3s ease; /* Transição suave ao passar o mouse */
   align-items: center;
 }
-
+#subtitulo {
+  font-size: 45px;
+}
 #imagem-destacada:hover {
   transform: scale(1.05); /* Aumenta a imagem um pouco quando passa o mouse */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Intensifica a sombra no hover */
