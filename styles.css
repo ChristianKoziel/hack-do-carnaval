@@ -115,7 +115,7 @@ p {
   align-items: center;
 }
 #subtitulo {
-  font-size: 45px;
+  font-size: 35px;
 }
 #imagem-destacada:hover {
   transform: scale(1.05); /* Aumenta a imagem um pouco quando passa o mouse */
@@ -143,7 +143,7 @@ video {
   text-align: center;
   color: white;
   font-size: 18px;
-  padding: 10px;
+  padding: 5px;
 }
 .promo-header span {
   font-weight: bold;
@@ -154,7 +154,7 @@ video {
 .hero {
   text-align: center;
   padding: 10px;
-  background: linear-gradient(135deg, #4a148c, #6a1b9a);
+  background: linear-gradient(180deg, #010047, #000000);
   color: white;
 }
 
@@ -178,7 +178,7 @@ video {
   background-color: #000;
 }
 #topo {
-  font-size: 20px;
+  font-size: 15px;
 }
 #verde {
   color:green;
@@ -192,7 +192,7 @@ video {
 .main-content .highlight {
   color: yellow;
   font-weight: bold;
-  text-align: justify;
+  /* text-align: justify; */
 }
 #carnaval {
   color:purple;
