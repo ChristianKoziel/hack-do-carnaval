@@ -98,12 +98,15 @@ body {
 }
 
 p {
-  font-size: 40px;
+  font-size: 35px;
 }
 .fogo {
   display: block;
   margin: 20px auto;
   width: 70px;
+}
+#paragrafoseila {
+  font-size: 25px;
 }
 #imagem-destacada {
   width: 100%;
@@ -198,8 +201,8 @@ video {
   color:purple;
 }
 .main-content .arrow-down {
-  width: 100px;
-  height: 100px;
+  width: 50x;
+  height: 50px;
   /* background-color: blue; */
   /* clip-path: polygon(50% 0, 0 100%, 100% 100%); */
   margin: 20px auto;
