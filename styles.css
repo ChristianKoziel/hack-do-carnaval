@@ -203,6 +203,7 @@ video {
   font-weight: bold;
   /* text-align: justify; */
 }
+
 #carnaval {
   color:purple;
 }
@@ -583,7 +584,7 @@ hr {
   transform: scale(1.2); /* Efeito de zoom nas redes sociais */
 }
 #direitosreservados {
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .popup {
@@ -608,4 +609,42 @@ hr {
 .popup.hidden {
   opacity: 0;
   transform: translateY(20px);
+}
+
+
+
+.secure-purchase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #241111; /* Fundo claro para destacar */
+  border: 2px solid #e0e0e0; /* Borda leve */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: 20px auto;
+  max-width: 90%; /* Restringe a largura no celular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.secure-message {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaçamento entre texto e imagem */
+}
+
+.secure-message img {
+  width: 80px; /* Tamanho ajustado da imagem */
+  height: auto;
+  border-radius: 5px; /* Bordas suaves */
+}
+
+.secure-message p {
+  font-size: 16px;
+  color: #ffffff; /* Texto mais escuro para contraste */
+  margin: 0;
+  line-height: 1.5; /* Melhor espaçamento entre linhas */
+}
+
+.secure-message strong {
+  color: #27ae60; /* Verde para destacar segurança */
 }
