@@ -121,7 +121,7 @@ p {
 
 #subtitulo {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem; /* Tamanho do título */
+  font-size: 25px; /* Tamanho do título */
   font-weight: 700;  /* Negrito */
   color: #ffffff; 
   line-height: 1.1;
