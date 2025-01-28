@@ -93,12 +93,59 @@
   <br><br>
   <p class="justificado" id="direitosreservados">Nosso guia "Hack do Carnaval" é o segredo pra você que quer virar o destaque do bloco e curtir de verdade. Com dicas simples e fáceis de aplicar, você vai: Aprender a chegar junto e puxar conversa sem medo. Deixar a vergonha de lado e se sentir seguro pra se jogar. Aproveitar cada segundo do Carnaval pegando geral e curtindo como nunca.</p>
   <p id="direitosreservados" class="textcenter"><strong>RESULTADOS:</strong></p>
-  <div>
-    <img src="prova social 1.jpg" id="imagem-destacada">
-    <img src="prova social 2.jpg" id="imagem-destacada">
-    <img src="prova social 3.jpg" id="imagem-destacada">
-    <img src="prova social 4.jpg" id="imagem-destacada">
+  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="ps 5.jpg" alt="Imagem 1">
+      <img src="ps7.jpg" alt="Imagem 1">
+      <img src="ps6.jpg" alt="Imagem 1">
+      <img src="prova social 1.jpg" alt="Imagem 1">
+      <img src="prova social 2.jpg" alt="Imagem 2">
+      <img src="prova social 3.jpg" alt="Imagem 3">
+      <img src="prova social 4.jpg" alt="Imagem 4">
+    </div>
+    <div class="controls">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+    <div class="indicators" id="indicators"></div>
   </div>
+
+  <script>
+    const slides = document.getElementById('slides');
+    const next = document.getElementById('next');
+    const prev = document.getElementById('prev');
+    const indicatorsContainer = document.getElementById('indicators');
+    const totalSlides = slides.children.length;
+    let index = 0;
+
+    // Criar indicadores (bolinhas)
+    for (let i = 0; i < totalSlides; i++) {
+      const button = document.createElement('button');
+      if (i === 0) button.classList.add('active'); // Marcar o primeiro como ativo
+      indicatorsContainer.appendChild(button);
+    }
+
+    const indicators = document.querySelectorAll('.indicators button');
+
+    function updateSlide(i) {
+      index = (i + totalSlides) % totalSlides; // Loop infinito
+      slides.style.transform = `translateX(${-index * 100}%)`;
+
+      // Atualizar o estado das bolinhas
+      indicators.forEach((indicator, idx) => {
+        indicator.classList.toggle('active', idx === index);
+      });
+    }
+
+    // Eventos de navegação
+    next.addEventListener('click', () => updateSlide(index + 1));
+    prev.addEventListener('click', () => updateSlide(index - 1));
+
+    // Eventos para clicar nas bolinhas
+    indicators.forEach((indicator, idx) => {
+      indicator.addEventListener('click', () => updateSlide(idx));
+    });
+  </script>
 </section>
 <section class="purchase">
   <img src="HACK DO CARNAVAL (1).png">

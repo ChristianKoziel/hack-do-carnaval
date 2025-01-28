@@ -648,3 +648,55 @@ hr {
 .secure-message strong {
   color: #27ae60; /* Verde para destacar segurança */
 }
+
+/* ---------------------------------------- */
+.slider {
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slides img {
+  width: 100%;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -40px;
+  z-index: 1;
+}
+.controls button {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.controls button:hover {
+  background-color: #ddd;
+}
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.indicators button {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.indicators button.active {
+  background-color: #333;
+}
