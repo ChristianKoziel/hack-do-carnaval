@@ -658,36 +658,46 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+
 .slides img {
   width: 100%;
 }
+
+/* Controles no meio da tela */
 .controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  position: relative;
-  top: -40px;
+  transform: translateY(-50%);
   z-index: 1;
 }
-.controls button {
-  background-color: #fff;
+
+.control-btn {
+  background-color: rgba(255, 255, 255, 0.8);
   border: none;
   padding: 10px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-.controls button:hover {
-  background-color: #ddd;
+
+.control-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
+
 .indicators {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
+
 .indicators button {
   width: 12px;
   height: 12px;
@@ -697,6 +707,7 @@ hr {
   background-color: #ccc;
   cursor: pointer;
 }
+
 .indicators button.active {
   background-color: #333;
 }

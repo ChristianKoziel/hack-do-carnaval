@@ -95,21 +95,20 @@
   <p id="direitosreservados" class="textcenter"><strong>RESULTADOS:</strong></p>
   <div class="slider">
     <div class="slides" id="slides">
-      <img src="ps 5.jpg" alt="Imagem 1">
-      <img src="ps7.jpg" alt="Imagem 1">
-      <img src="ps6.jpg" alt="Imagem 1">
-      <img src="prova social 1.jpg" alt="Imagem 1">
-      <img src="prova social 2.jpg" alt="Imagem 2">
-      <img src="prova social 3.jpg" alt="Imagem 3">
-      <img src="prova social 4.jpg" alt="Imagem 4">
+      <img src="ps3.jpg" alt="Imagem 1">
+      <img src="ps1.jpg" alt="Imagem 1">
+      <img src="ps2.jpg" alt="Imagem 1">
+      <img src="ps4.jpg" alt="Imagem 1">
+      <img src="ps5.jpg" alt="Imagem 2">
+
     </div>
     <div class="controls">
-      <button id="prev">&#10094;</button>
-      <button id="next">&#10095;</button>
+      <button id="prev" class="control-btn">&#10094;</button>
+      <button id="next" class="control-btn">&#10095;</button>
     </div>
     <div class="indicators" id="indicators"></div>
   </div>
-
+  
   <script>
     const slides = document.getElementById('slides');
     const next = document.getElementById('next');
@@ -117,33 +116,63 @@
     const indicatorsContainer = document.getElementById('indicators');
     const totalSlides = slides.children.length;
     let index = 0;
-
+  
+    let startX = 0;
+    let currentX = 0;
+  
     // Criar indicadores (bolinhas)
     for (let i = 0; i < totalSlides; i++) {
       const button = document.createElement('button');
       if (i === 0) button.classList.add('active'); // Marcar o primeiro como ativo
       indicatorsContainer.appendChild(button);
     }
-
+  
     const indicators = document.querySelectorAll('.indicators button');
-
+  
     function updateSlide(i) {
       index = (i + totalSlides) % totalSlides; // Loop infinito
       slides.style.transform = `translateX(${-index * 100}%)`;
-
+  
       // Atualizar o estado das bolinhas
       indicators.forEach((indicator, idx) => {
         indicator.classList.toggle('active', idx === index);
       });
     }
-
+  
     // Eventos de navegação
     next.addEventListener('click', () => updateSlide(index + 1));
     prev.addEventListener('click', () => updateSlide(index - 1));
-
+  
     // Eventos para clicar nas bolinhas
     indicators.forEach((indicator, idx) => {
       indicator.addEventListener('click', () => updateSlide(idx));
+    });
+  
+    // Mudança automática de slides
+    setInterval(() => {
+      updateSlide(index + 1);
+    }, 3000); // Alterar slide a cada 3 segundos
+  
+    // Adicionar suporte ao arrastar com o dedo (swipe)
+    slides.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX; // Pegar a posição inicial do toque
+    });
+  
+    slides.addEventListener('touchmove', (e) => {
+      currentX = e.touches[0].clientX; // Atualizar a posição atual do toque
+    });
+  
+    slides.addEventListener('touchend', () => {
+      const deltaX = currentX - startX; // Diferença entre início e fim do toque
+      if (deltaX > 50) {
+        // Swipe para a direita
+        updateSlide(index - 1);
+      } else if (deltaX < -50) {
+        // Swipe para a esquerda
+        updateSlide(index + 1);
+      }
+      startX = 0;
+      currentX = 0;
     });
   </script>
 </section>
