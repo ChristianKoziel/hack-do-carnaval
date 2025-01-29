@@ -119,6 +119,7 @@
   
     let startX = 0;
     let currentX = 0;
+    let autoSlideInterval;
   
     // Criar indicadores (bolinhas)
     for (let i = 0; i < totalSlides; i++) {
@@ -139,6 +140,19 @@
       });
     }
   
+    // Iniciar o auto slide
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(() => {
+      updateSlide(index + 1);
+    }, 6000); // Altera para 6 segundos
+
+    }
+  
+    // Pausar o auto slide
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+  
     // Eventos de navegação
     next.addEventListener('click', () => updateSlide(index + 1));
     prev.addEventListener('click', () => updateSlide(index - 1));
@@ -148,13 +162,9 @@
       indicator.addEventListener('click', () => updateSlide(idx));
     });
   
-    // Mudança automática de slides
-    setInterval(() => {
-      updateSlide(index + 1);
-    }, 3000); // Alterar slide a cada 3 segundos
-  
     // Adicionar suporte ao arrastar com o dedo (swipe)
     slides.addEventListener('touchstart', (e) => {
+      stopAutoSlide(); // Pausar ao começar o toque
       startX = e.touches[0].clientX; // Pegar a posição inicial do toque
     });
   
@@ -171,9 +181,13 @@
         // Swipe para a esquerda
         updateSlide(index + 1);
       }
+      startAutoSlide(); // Retomar o auto slide ao terminar o toque
       startX = 0;
       currentX = 0;
     });
+  
+    // Iniciar o auto slide ao carregar a página
+    startAutoSlide();
   </script>
 </section>
 <section class="purchase">
